@@ -24,16 +24,16 @@ function search(typed) {
   <div class="slds-card__header slds-grid">
     <header class="slds-media slds-media_center slds-has-flexi-truncate">
       <div class="slds-media__figure">
-        <span class="slds-icon_container" title="${country.name}">
-          <img src="${country.name}.svg" class="flag-image">
+        <span class="slds-icon_container" title="${country.label}">
+          <img src="flags/${country.name}.svg" class="flag-image">
           </svg>
           <span class="slds-assistive-text">${country.name}</span>
         </span>
       </div>
       <div class="slds-media__body">
         <h2 class="slds-card__header-title">
-          <a href="#" class="slds-card__header-link slds-truncate" title="${country.name}">
-            <span>${country.name}</span>
+          <a href="#" class="slds-card__header-link slds-truncate" title="${country.label}">
+            <span>${country.label}</span>
           </a>
         </h2>
       </div>

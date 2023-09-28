@@ -1,5 +1,6 @@
 const polish = {
-  name: "Polska",
+  label: "Polska",
+  name: "poland",
   entries: [
     {
       plate: "B",

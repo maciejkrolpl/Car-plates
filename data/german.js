@@ -1,5 +1,6 @@
 const german = {
-  name: "Niemcy",
+  label: "Niemcy",
+  name: "germany",
   entries: [
     { plate: "A", district: "Augsburg, Bawaria" },
     { plate: "AA", district: "Aalen i Ostalbkreis, Badenia-Wirtembergia" },

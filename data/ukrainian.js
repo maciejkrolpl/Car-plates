@@ -1,5 +1,6 @@
 const ukrainian = {
-  name: "Ukraina",
+  label: "Ukraina",
+  name: "ukraine",
   entries: [
     { plate: "AX", district: "obwód charkowski" },
     { plate: "KX", district: "obwód charkowski" },
