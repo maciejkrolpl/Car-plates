@@ -12,3 +12,8 @@ body {
   border-radius: .25rem;
   border: 1px solid #c9c9c9
 }
+
+.footer {
+  position:absolute; bottom: 0px;
+  color: #838383;
+}
