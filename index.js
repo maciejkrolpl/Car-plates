@@ -59,14 +59,17 @@ function clickButton(clickedId) {
   search();
 }
 
-function search() {
-  if (!searchTerm?.length) {
-    const output = document.getElementById("output");
-    output.innerHTML = "";
-    return;
-  }
+function clearOutput() {
+  const output = document.getElementById("output");
+  output.innerHTML = "";
+}
 
-  if (searchTerm?.length <= 2 && searchType === "descr") {
+function search() {
+  if (
+    !searchTerm?.length ||
+    (searchTerm?.length <= 2 && searchType === "descr")
+  ) {
+    clearOutput();
     return;
   }
 
