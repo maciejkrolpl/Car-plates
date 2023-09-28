@@ -1,10 +1,10 @@
 .main {
-  margin: 0px 35%
+  margin: 0px 35% 25px 35%;
 }
 
 @media only screen and (max-width:768px) {
   .main {
-    margin: 0px 15%
+    margin: 0px 15% 25px 15%;
   } 
 }
 

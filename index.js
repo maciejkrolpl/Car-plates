@@ -1,22 +1,46 @@
 let searchType = "strict";
+let searchTerm;
+
+const SEARCH_LABEL = {
+  strict: "Wyszukaj tablicę rejestracyjną",
+  nonstrict: "Wyszukaj tablicę rejestracyjną",
+  descr: "Wyszukaj tablicę rejestracyjną (min. 3 znaki)",
+};
 
 document.addEventListener(
   "DOMContentLoaded",
   () => {
-    const input = document.getElementById("text-input-id-47");
-    input.addEventListener("input", (e) => {
-      search(e.target.value.toUpperCase());
-    });
-
-    const buttons = document.getElementsByClassName("slds-button");
-    [...buttons].forEach((button) => {
-      button.addEventListener("click", (e) => {
-        clickButton(e.target.id);
-      });
-    });
+    setInputListener();
+    setButtonsListeners();
   },
   false
 );
+
+function setInputListener() {
+  const input = document.getElementById("text-input");
+  input.addEventListener("input", (e) => {
+    searchTerm = e.target.value.toUpperCase();
+    search();
+  });
+}
+
+function setButtonsListeners() {
+  const buttons = document.getElementsByClassName("slds-button");
+  [...buttons].forEach((button) => {
+    button.addEventListener("click", (e) => {
+      clickButton(e.target.id);
+    });
+  });
+}
+
+function setSearchLabels() {
+  const inputLabel = document.getElementById("text-input-label");
+  const input = document.getElementById("text-input");
+  const label = SEARCH_LABEL[searchType];
+
+  inputLabel.innerText = label;
+  input.placeholder = label;
+}
 
 function clickButton(clickedId) {
   const buttons = document.getElementsByClassName("slds-button");
@@ -31,19 +55,25 @@ function clickButton(clickedId) {
       button.classList.add("slds-button_neutral");
     }
   });
+  setSearchLabels();
+  search();
 }
 
-function search(typed) {
-  if (!typed?.length) {
+function search() {
+  if (!searchTerm?.length) {
     const output = document.getElementById("output");
     output.innerHTML = "";
     return;
   }
 
+  if (searchTerm?.length <= 2 && searchType === "descr") {
+    return;
+  }
+
   const filterToSearchType = {
-    strict: (entry) => entry.plate === typed,
-    nonstrict: (entry) => entry.plate.startsWith(typed),
-    descr: (entry) => entry.district.toUpperCase().includes(typed),
+    strict: (entry) => entry.plate === searchTerm,
+    nonstrict: (entry) => entry.plate.startsWith(searchTerm),
+    descr: (entry) => entry.district.toUpperCase().includes(searchTerm),
   };
 
   const result = [];
@@ -77,7 +107,7 @@ function search(typed) {
     </header>
   </div>`
       );
-      result.push([...matched]);
+      result.push(...matched);
       if (matched.length) {
         result.push(`</article>`);
       }
