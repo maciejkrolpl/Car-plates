@@ -79,7 +79,7 @@ function search() {
   const result = [];
   const filter = filterToSearchType[searchType];
 
-  [polish, ukrainian, german].forEach((country) => {
+  [polish, ukrainian, german, czech].forEach((country) => {
     const matched = country.entries.filter(filter).map((plate) => {
       return `<div class="slds-card__body slds-card__body_inner"><b>${plate.plate}</b> - ${plate.district}</div>`;
     });
