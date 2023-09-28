@@ -191,6 +191,10 @@ const polish = {
       district: "Wrocław",
     },
     {
+      plate: "DX",
+      district: "Wrocław",
+    },
+    {
       plate: "DBL",
       district: "powiat bolesławiecki",
     },
@@ -292,6 +296,134 @@ const polish = {
     },
     {
       plate: "DZL",
+      district: "powiat złotoryjski",
+    },
+    {
+      plate: "V",
+      district: "województwo dolnośląskie",
+    },
+    {
+      plate: "VJ",
+      district: "Jelenia Góra",
+    },
+    {
+      plate: "VL",
+      district: "Legnica",
+    },
+    {
+      plate: "VB",
+      district: "Wałbrzych",
+    },
+    {
+      plate: "VW",
+      district: "Wrocław",
+    },
+    {
+      plate: "VX",
+      district: "Wrocław",
+    },
+    {
+      plate: "VBL",
+      district: "powiat bolesławiecki",
+    },
+    {
+      plate: "VDZ",
+      district: "powiat dzierżoniowski",
+    },
+    {
+      plate: "VGR",
+      district: "powiat górowski",
+    },
+    {
+      plate: "VGL",
+      district: "powiat głogowski",
+    },
+    {
+      plate: "VJA",
+      district: "powiat jaworski",
+    },
+    {
+      plate: "VJE",
+      district: "powiat jeleniogórski",
+    },
+    {
+      plate: "VKA",
+      district: "powiat kamiennogórski",
+    },
+    {
+      plate: "VKL",
+      district: "powiat kłodzki",
+    },
+    {
+      plate: "VLE",
+      district: "powiat legnicki",
+    },
+    {
+      plate: "VLB",
+      district: "powiat lubański",
+    },
+    {
+      plate: "VLU",
+      district: "powiat lubiński",
+    },
+    {
+      plate: "VLW",
+      district: "powiat lwówecki",
+    },
+    {
+      plate: "VMI",
+      district: "powiat milicki",
+    },
+    {
+      plate: "VOL",
+      district: "powiat oleśnicki",
+    },
+    {
+      plate: "VOA",
+      district: "powiat oławski",
+    },
+    {
+      plate: "VPL",
+      district: "powiat polkowicki",
+    },
+    {
+      plate: "VSR",
+      district: "powiat średzki",
+    },
+    {
+      plate: "VST",
+      district: "powiat strzeliński",
+    },
+    {
+      plate: "VSW",
+      district: "powiat świdnicki",
+    },
+    {
+      plate: "VTR",
+      district: "powiat trzebnicki",
+    },
+    {
+      plate: "VBA",
+      district: "powiat wałbrzyski",
+    },
+    {
+      plate: "VWL",
+      district: "powiat wołowski",
+    },
+    {
+      plate: "VWR",
+      district: "powiat wrocławski",
+    },
+    {
+      plate: "VZA",
+      district: "powiat ząbkowicki",
+    },
+    {
+      plate: "VZG",
+      district: "powiat zgorzelecki",
+    },
+    {
+      plate: "VZL",
       district: "powiat złotoryjski",
     },
     {
@@ -540,6 +672,94 @@ const polish = {
     },
     {
       plate: "GWO",
+      district: "powiat wejherowski",
+    },
+    {
+      plate: "X",
+      district: "województwo pomorskie",
+    },
+    {
+      plate: "XD",
+      district: "Gdańsk",
+    },
+    {
+      plate: "XA",
+      district: "Gdynia",
+    },
+    {
+      plate: "XSP",
+      district: "Sopot",
+    },
+    {
+      plate: "XS",
+      district: "Słupsk",
+    },
+    {
+      plate: "XBY",
+      district: "powiat bytowski",
+    },
+    {
+      plate: "XCH",
+      district: "powiat chojnicki",
+    },
+    {
+      plate: "XCZ",
+      district: "powiat człuchowski",
+    },
+    {
+      plate: "XDA",
+      district: "powiat gdański",
+    },
+    {
+      plate: "XKA",
+      district: "powiat kartuski",
+    },
+    {
+      plate: "XKS",
+      district: "powiat kościerski",
+    },
+    {
+      plate: "XKW",
+      district: "powiat kwidzyński",
+    },
+    {
+      plate: "XLE",
+      district: "powiat lęborski",
+    },
+    {
+      plate: "XMB",
+      district: "powiat malborski",
+    },
+    {
+      plate: "XND",
+      district: "powiat nowodworski",
+    },
+    {
+      plate: "XPU",
+      district: "powiat pucki",
+    },
+    {
+      plate: "XST",
+      district: "powiat starogardzki",
+    },
+    {
+      plate: "XSZ",
+      district: "powiat sztumski",
+    },
+    {
+      plate: "XSL",
+      district: "powiat słupski",
+    },
+    {
+      plate: "XTC",
+      district: "powiat tczewski",
+    },
+    {
+      plate: "XWE",
+      district: "powiat wejherowski",
+    },
+    {
+      plate: "XWO",
       district: "powiat wejherowski",
     },
     {
@@ -1028,6 +1248,154 @@ const polish = {
     },
     {
       plate: "PZL",
+      district: "powiat złotowski",
+    },
+    {
+      plate: "M",
+      district: "województwo wielkopolskie",
+    },
+    {
+      plate: "MK",
+      district: "Kalisz",
+    },
+    {
+      plate: "MN",
+      district: "Konin",
+    },
+    {
+      plate: "ML",
+      district: "Leszno",
+    },
+    {
+      plate: "MO",
+      district: "Poznań",
+    },
+    {
+      plate: "MY",
+      district: "Poznań",
+    },
+    {
+      plate: "MCH",
+      district: "powiat chodzieski",
+    },
+    {
+      plate: "MCT",
+      district: "powiat czarnkowsko-trzcianecki",
+    },
+    {
+      plate: "MGN",
+      district: "powiat gnieźnieński",
+    },
+    {
+      plate: "MGS",
+      district: "powiat gostyński",
+    },
+    {
+      plate: "MGO",
+      district: "powiat grodziski",
+    },
+    {
+      plate: "MJA",
+      district: "powiat jarociński",
+    },
+    {
+      plate: "MKA",
+      district: "powiat kaliski",
+    },
+    {
+      plate: "MKE",
+      district: "powiat kępiński",
+    },
+    {
+      plate: "MKL",
+      district: "powiat kolski",
+    },
+    {
+      plate: "MKN",
+      district: "powiat koniński",
+    },
+    {
+      plate: "MKS",
+      district: "powiat kościański",
+    },
+    {
+      plate: "MKR",
+      district: "powiat krotoszyński",
+    },
+    {
+      plate: "MLE",
+      district: "powiat leszczyński",
+    },
+    {
+      plate: "MMI",
+      district: "powiat międzychodzki",
+    },
+    {
+      plate: "MNT",
+      district: "powiat nowotomyski",
+    },
+    {
+      plate: "MOB",
+      district: "powiat obornicki",
+    },
+    {
+      plate: "MOS",
+      district: "powiat ostrowski",
+    },
+    {
+      plate: "MOT",
+      district: "powiat ostrzeszowski",
+    },
+    {
+      plate: "MP",
+      district: "powiat pilski",
+    },
+    {
+      plate: "MPL",
+      district: "powiat pleszewski",
+    },
+    {
+      plate: "MZ",
+      district: "powiat poznański",
+    },
+    {
+      plate: "MRA",
+      district: "powiat rawicki",
+    },
+    {
+      plate: "MSR",
+      district: "powiat średzki",
+    },
+    {
+      plate: "MSE",
+      district: "powiat śremski",
+    },
+    {
+      plate: "MSZ",
+      district: "powiat szamotulski",
+    },
+    {
+      plate: "MSL",
+      district: "powiat słupecki",
+    },
+    {
+      plate: "MTU",
+      district: "powiat turecki",
+    },
+    {
+      plate: "MWA",
+      district: "powiat wągrowiecki",
+    },
+    {
+      plate: "MWL",
+      district: "powiat wolsztyński",
+    },
+    {
+      plate: "MWR",
+      district: "powiat wrzesiński",
+    },
+    {
+      plate: "MZL",
       district: "powiat złotowski",
     },
     {
@@ -1678,5 +2046,57 @@ const polish = {
       plate: "ZLO",
       district: "powiat łobeski",
     },
+    {
+      plate: "U",
+      district: "pojazdy wojskowe",
+    },
+    { plate: "HA", district: "Centralne Biuro Antykorupcyjne" },
+    { plate: "HB", district: "Służba Ochrony Państwa" },
+    { plate: "HC", district: "Służba Celno-Skarbowa" },
+    {
+      plate: "HK",
+      district: "Agencja Bezpieczeństwa Wewnętrznego i Agencja Wywiadu",
+    },
+    {
+      plate: "HM",
+      district: "Służba Kontrwywiadu Wojskowego i Służba Wywiadu Wojskowego",
+    },
+    { plate: "HP", district: "Policja" },
+    { plate: "HW", district: "Straż Graniczna" },
+    { plate: "HPA", district: "Komenda Główna" },
+    { plate: "HPB", district: "Dolnośląska Komenda Wojewódzka" },
+    { plate: "HPC", district: "Kujawsko-Pomorska Komenda Wojewódzka" },
+    { plate: "HPD", district: "Lubelska Komenda Wojewódzka" },
+    { plate: "HPE", district: "Lubuska Komenda Wojewódzka" },
+    { plate: "HPF", district: "Łódzka Komenda Wojewódzka" },
+    { plate: "HPG", district: "Małopolska Komenda Wojewódzka" },
+    { plate: "HPH", district: "Mazowiecka Komenda Wojewódzka" },
+    { plate: "HPJ", district: "Opolska Komenda Wojewódzka" },
+    { plate: "HPK", district: "Podkarpacka Komenda Wojewódzka" },
+    { plate: "HPL", district: "Szkoły policyjne" },
+    { plate: "HPM", district: "Podlaska Komenda Wojewódzka" },
+    { plate: "HPN", district: "Pomorska Komenda Wojewódzka" },
+    { plate: "HPP", district: "Śląska Komenda Wojewódzka" },
+    { plate: "HPS", district: "Świętokrzyska Komenda Wojewódzka" },
+    { plate: "HPT", district: "Warmińsko-Mazurska Komenda Wojewódzka" },
+    { plate: "HPU", district: "Wielkopolska Komenda Wojewódzka" },
+    { plate: "HPW", district: "Zachodniopomorska Komenda Wojewódzka" },
+    { plate: "HPZ", district: "Komenda Stołeczna Policji" },
+    { plate: "HCA", district: "Izba Celna w Olsztynie" },
+    { plate: "HCB", district: "Izba Celna w Białymstoku" },
+    { plate: "HCC", district: "Izba Celna w Białej Podlaskiej" },
+    { plate: "HCD", district: "Izba Celna w Przemyślu" },
+    { plate: "HCE", district: "Izba Celna w Krakowie" },
+    { plate: "HCF", district: "Izba Celna w Katowicach" },
+    { plate: "HCG", district: "Izba Celna we Wrocławiu" },
+    { plate: "HCH", district: "Izba Celna w Rzepinie" },
+    { plate: "HCJ", district: "Izba Celna w Szczecinie" },
+    { plate: "HCK", district: "Izba Celna w Gdyni" },
+    { plate: "HCL", district: "Izba Celna w Warszawie" },
+    { plate: "HCM", district: "Izba Celna w Toruniu" },
+    { plate: "HCN", district: "Izba Celna w Łodzi" },
+    { plate: "HCO", district: "Izba Celna w Poznaniu" },
+    { plate: "HCP", district: "Izba Celna w Opolu" },
+    { plate: "HCR", district: "Izba Celna w Kielcach" },
   ],
 };
