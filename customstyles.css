@@ -1,0 +1,14 @@
+body {
+  margin: 0px 35%
+}
+
+@media only screen and (max-width:768px) {
+  body {
+    margin: 0px 15%
+  } 
+}
+
+.flag-image {
+  border-radius: .25rem;
+  border: 1px solid #c9c9c9
+}
