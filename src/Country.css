@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: .25rem;
+    background-clip: padding-box;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    color: #181818;
+}
+
+.card_header {
+  padding: .75rem 1rem 0 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon-container {
+  margin-right: 1rem;
+}
+
+.header-title h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.flag-image {
+  border-radius: .25rem;
+  border: 1px solid #c9c9c9
+}
+
+.card_body div {
+  margin:  .5rem .75rem;
+  font-size: 13px;
+
+}

@@ -1,67 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link
-    rel="stylesheet"
-    href="styles/salesforce-lightning-design-system.min.css"
-  />
-  <link rel="stylesheet" href="styles/customstyles.css" />
-  <title>Tablice rejestracyjne wyszukiwarka</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
   <body>
-    <div class="slds-align_absolute-center">
-      <div class="slds-button-group" role="group">
-        <button class="slds-button slds-button_brand" id="strict">
-          Dokładnie
-        </button>
-        <button class="slds-button slds-button_neutral" id="nonstrict">
-          Początek
-        </button>
-        <button class="slds-button slds-button_neutral" id="descr">
-          Wśród opisów
-        </button>
-      </div>
-    </div>
-
-    <div class="main slds-grid slds-grid_vertical">
-      <div class="slds-col slds-size_1-of-1"></div>
-      <div class="slds-col slds-size_1-of-1">
-        <div class="slds-form-element">
-          <label class="slds-form-element__label" for="text-input" id="text-input-label">
-          </label>
-
-          <div class="slds-form-element__control">
-            <input
-              type="text"
-              id="text-input"
-              placeholder=""
-              required=""
-              class="slds-input"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="slds-col slds-size_1-of-1">
-        <div id="output"></div>
-      </div>
-    </div>
-    
-    <div class="footer">
-      (c) Maciej Król
-      <a href="https://github.com/maciejkrolpl/car-plates/">
-        <img
-          src="./images/github.svg"
-          width="16"
-          height="16"
-          alt="GitHub icon"
-        />
-        github.com/maciejkrolpl/car-plates/
-      </a>
-    </div>
-    <script src="index.js"></script>
-    <script src="data/german.js"></script>
-    <script src="data/polish.js"></script>
-    <script src="data/ukrainian.js"></script>
-    <script src="data/czech.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

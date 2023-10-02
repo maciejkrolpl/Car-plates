@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+section {
+    margin: 0px 35% 25px 35%;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        margin: 0px 15% 25px 15%;
+    }
+
+    header {
+        transform: rotate(90deg);
+        position: fixed;
+        top: 257px;
+        left: -241px;
+    }
+}

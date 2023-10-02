@@ -1,0 +1,36 @@
+.button {
+    position: relative;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    padding-left: 0.75rem;
+    background: none;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    line-height: 1.875rem;
+    text-decoration: none;
+    color: #0176d3;
+    white-space: normal;
+    user-select: none;
+    width: 100%;
+}
+
+.button:focus {
+    box-shadow: 0 0 3px #0176d3;
+    outline: 0;
+}
+
+.button-standard {
+    background-color: white;
+    border-color: #747474;
+}
+
+.button-mainaction {
+    background-color: #0176d3;
+    border-color: #0176d3;
+    color: white;
+}
