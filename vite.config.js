@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/car-plates/',
-  build: {
-    outDir: '/car-plates/',
-},
 })
