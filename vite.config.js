@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/car-plates/',
   build: {
-    outDir: 'public',
+    outDir: '/car-plates/',
 },
 })
