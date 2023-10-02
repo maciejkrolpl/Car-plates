@@ -1,4 +1,4 @@
-const polish = {
+export const polish = {
   label: "Polska",
   name: "poland",
   entries: [

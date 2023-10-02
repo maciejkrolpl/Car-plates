@@ -1,0 +1,40 @@
+.form-element_label {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    display: inline-block;
+    color: #444;
+    font-size: 0.75rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    margin-bottom: 0.125rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-element {
+    position: relative;
+    min-width: 0;
+}
+
+.button-group button {
+    border-radius: 0;
+    border-left-width: 0;
+    display: inline-block;
+}
+
+.button-group button:first-child {
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  border-left-width: 1px;
+}
+
+.button-group button:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
