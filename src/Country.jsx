@@ -10,7 +10,7 @@ function Country(props) {
                 <div className="card_header">
                     <div className="icon-container">
                         <img
-                            src={`./../public/flags/${name}.svg`}
+                            src={`/../public/flags/${name}.svg`}
                             className="flag-image"
                         />
                     </div>
