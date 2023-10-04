@@ -39,6 +39,10 @@ function App() {
         );
     };
 
+   const onDeleteClick = () => {
+    setSearchTerm('')
+   }
+
     return (
         <div>
             <header>
@@ -66,6 +70,7 @@ function App() {
                     id="search-input"
                     label={inputLabel}
                     oninput={handleSearch}
+                    ondeleteclick={onDeleteClick}
                 />
             </section>
 
