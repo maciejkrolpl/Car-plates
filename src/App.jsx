@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import logo from './assets/github-mark.png';
 import Input from './components/Input';
 import ButtonGroup from './components/ButtonGroup';
 import Results from './Results';
@@ -43,6 +44,15 @@ function App() {
             <header>
                 <h1>Wyszukiwarka tablic rejestracyjnych</h1>
             </header>
+
+            <footer>
+                Maciej Król 
+                <a href="https://github.com/maciejkrolpl/car-plates">
+                    <img src={logo} width="16" height="16" className="github" />
+                    github.com/maciejkrolpl/car-plates
+                </a>
+            </footer>
+
             <section>
                 <ButtonGroup
                     options={options}
@@ -62,6 +72,8 @@ function App() {
             <section>
                 <Results searchTerm={searchTerm} searchType={searchType} />
             </section>
+
+
         </div>
     );
 }
