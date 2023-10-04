@@ -1,4 +1,4 @@
-export const ukrainian = {
+export const country = {
   label: "Ukraina",
   name: "ukraine",
   entries: [

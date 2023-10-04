@@ -1,7 +1,4 @@
-import { czech } from './data/czech.js';
-import { polish } from './data/polish.js';
-import { ukrainian } from './data/ukrainian.js';
-import { german } from './data/german.js';
+import data from './data/data';
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Country from './Country.jsx';
@@ -10,8 +7,17 @@ const Results = (props) => {
     const { searchTerm, searchType } = props;
 
     useEffect(() => {
+        // async function importData() {
+        //     const imported = await data();
+        //     imported.forEach(e => console.log(e.country))
+        // }
+        // importData();
+        console.log(data())
+    },[])
+
+    useEffect(() => {
         search();
-           // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchTerm, searchType]);
 
     const [result, setResult] = useState([]);
@@ -21,7 +27,7 @@ const Results = (props) => {
             !searchTerm?.length ||
             (searchTerm?.length <= 2 && searchType === 'description')
         ) {
-            setResult([])
+            setResult([]);
             return;
         }
 
@@ -34,10 +40,12 @@ const Results = (props) => {
 
         const filter = filterToSearchType[searchType];
 
-        const filtered = [polish, ukrainian, german, czech].map((country) => ({
-            ...country,
-            entries: country.entries.filter(filter).map((plate) => plate),
-        })).filter(country => !!country.entries.length);
+        const filtered = [polish, ukrainian, german, czech]
+            .map((country) => ({
+                ...country,
+                entries: country.entries.filter(filter).map((plate) => plate),
+            }))
+            .filter((country) => !!country.entries.length);
 
         console.log(filtered);
         setResult(filtered);

@@ -1,4 +1,4 @@
-export const czech = {
+export const country = {
   label: 'Czechy',
   name: 'czechia',
   entries: [{ "plate" : "A", "district" : "Praga (miasto wydzielone na prawach kraju)" } ,

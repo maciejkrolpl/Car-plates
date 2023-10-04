@@ -1,4 +1,4 @@
-export const german = {
+export const country = {
   label: "Niemcy",
   name: "germany",
   entries: [
