@@ -71,6 +71,7 @@ function App() {
                     label={inputLabel}
                     oninput={handleSearch}
                     ondeleteclick={onDeleteClick}
+                    type="search"
                 />
             </section>
 
