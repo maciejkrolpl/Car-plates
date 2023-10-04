@@ -1,10 +1,23 @@
-export default function data() {
+const data = async () => {
     const countries = ['czechia', 'poland', 'germany', 'ukraine'];
-    return Promise.all(
-        countries.reduce((all, current) => {
-            all.push(import(`./${current}.js`))
-            all.push(import(`./${current}.svg`))
-            return all;
-        }, [])
-    )
-}
+    let data = [];
+
+    for (const country of countries) {
+        const importedEntries = await import(`./${country}.js`);
+        const importedFlag = await import(`./${country}.svg`);
+        const { entries, label, name } = importedEntries.country;
+        data = [
+            ...data,
+            {
+                entries,
+                label,
+                name,
+                flag: importedFlag.default,
+            },
+        ];
+    }
+
+    return data;
+};
+
+export default data;

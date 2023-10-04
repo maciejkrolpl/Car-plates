@@ -7,13 +7,12 @@ const Results = (props) => {
     const { searchTerm, searchType } = props;
 
     useEffect(() => {
-        // async function importData() {
-        //     const imported = await data();
-        //     imported.forEach(e => console.log(e.country))
-        // }
-        // importData();
-        console.log(data())
-    },[])
+        async function importData() {
+            const imported = await data();
+            setCountries(imported);
+        }
+        importData();
+    }, []);
 
     useEffect(() => {
         search();
@@ -21,6 +20,7 @@ const Results = (props) => {
     }, [searchTerm, searchType]);
 
     const [result, setResult] = useState([]);
+    const [countries, setCountries] = useState({});
 
     const search = () => {
         if (
@@ -40,14 +40,13 @@ const Results = (props) => {
 
         const filter = filterToSearchType[searchType];
 
-        const filtered = [polish, ukrainian, german, czech]
+        const filtered = countries
             .map((country) => ({
                 ...country,
                 entries: country.entries.filter(filter).map((plate) => plate),
             }))
             .filter((country) => !!country.entries.length);
 
-        console.log(filtered);
         setResult(filtered);
     };
 
@@ -55,10 +54,10 @@ const Results = (props) => {
         <div>
             {result.map((country) => (
                 <Country
-                    name={country.name}
                     label={country.label}
                     entries={country.entries}
                     key={country.name}
+                    flag={country.flag}
                 />
             ))}
         </div>
